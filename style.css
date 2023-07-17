@@ -6,7 +6,7 @@
 .header {
     background-color: #222222;
     height: inherit;
-    width: 100%;
+    width: 10%;
     height: 75px;
     display: flex;
     justify-content: space-between;
