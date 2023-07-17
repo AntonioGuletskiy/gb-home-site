@@ -55,3 +55,8 @@
 .span2 {
     color: #F16D7F;
 }
+
+.product {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
