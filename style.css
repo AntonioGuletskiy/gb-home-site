@@ -122,6 +122,7 @@ body {
 
 .prod__card {
     background-color: #F8F8F8;
+    position: relative;
 
 }
 
@@ -132,6 +133,50 @@ body {
     align-items: flex-start;
     gap: 16px;
     padding: 24px 16px;
+}
+
+.prod__card .info {
+    position: absolute;
+    left: 35%;
+    bottom: 65%;
+    overflow: hidden;
+    border: 2px solid;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 10px 0 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0;
+}
+
+.prod__card:hover .info {
+    opacity: 1;
+
+}
+
+
+.prod__card-img:hover {
+    opacity: 0.4;
+
+}
+
+.prod__card-img:hover button {
+    position: absolute;
+    display: block;
+    z-index: 9999;
+}
+
+.button__none {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
+    z-index: -1;
 }
 
 .products_h1 {
@@ -168,6 +213,154 @@ img {
     max-width: 100%;
 }
 
+.discounts {
+    background-color: #222224;
+}
+
+.discounts__menu {
+    padding: 103px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.discounts__menu-ls {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    color: #FBFBFB;
+}
+
+.discounts__menu-ls h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.discounts__menu-ls p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 20px;
+}
+
+.subscribe {
+    background: url(img/fon.png) no-repeat;
+    max-height: 100%;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-blend-mode: screen;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 448px;
+}
+
+.subscribe__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    align-items: end;
+    justify-items: center;
+    text-align: center;
+
+}
+
+.subscribe__comment p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #010000;
+}
+
+.subscribe__comment p span {
+    font-size: 20px;
+    font-style: italic;
+
+
+}
+
+
+.subscribe__comment {
+    padding: 97px 0;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+}
+
+.subscribe__email {
+    padding: 97px 0;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe__email h1 {
+    color: #222224;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 167.2%;
+}
+
+.subscribe__email span {
+    color: #222224;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 167.2%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form input {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.form button {
+    background: #E05C6E;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    color: white;
+    border-left: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 49px;
+    width: 100px;
+}
+
+.footer {
+    background-color: #222224;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-signature {
+    padding: 30px 0;
+}
+
+.footer-signature p {
+    color: #FBFBFB;
+    font-size: 16px;
+
+}
+
+
+
 @media (max-width: 768px) {
 
     .container {
@@ -191,6 +384,38 @@ img {
     .text_menu {
         max-height: 368px;
         max-width: 100%;
+    }
+
+    .discounts__menu {
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 50px 104px;
+    }
+
+    .subscribe {
+        background-size: cover;
+        height: 640px;
+    }
+
+    .subscribe__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe__comment {
+        padding: 60px 0 0 0;
+    }
+
+    .subscribe__email {
+        padding: 0 0 0 20px;
+    }
+
+    .subscribe__email h1 {
+        line-height: 1;
     }
 }
 
@@ -244,5 +469,27 @@ img {
     .prod__card img {
         width: 100%;
     }
+
+    .discounts__menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 50px 13px;
+    }
+
+    .subscribe__comment p {
+        font-size: 18px;
+    }
+
+    .subscribe__email span {
+        font-size: 14px;
+    }
+
+    .footer__menu {
+        flex-direction: column-reverse;
+        padding-top: 30px;
+    }
+
 
 }
