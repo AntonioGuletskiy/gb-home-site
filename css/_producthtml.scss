@@ -63,6 +63,7 @@ $colorLink:#6F6E6E;
     }
 }
 .product__card{ 
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +76,7 @@ $colorLink:#6F6E6E;
     position: absolute;
     left: 10%;
     right: 10%;
-    top: 130%;
+    top: -65px;
     z-index: 8;
     background: white;
     display: flex;
