@@ -147,7 +147,7 @@ body {
     display: inline-block;
     text-decoration: none;
     padding: 10px 10px 0 10px;
-    color: white;
+    color: rgb(68, 64, 64);
     font-size: 14px;
     font-weight: 700;
     opacity: 0;
@@ -198,6 +198,9 @@ body {
 }
 
 .button_product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 40px;
     text-align: center;
 }
@@ -339,6 +342,10 @@ img {
     width: 100px;
 }
 
+.form__btn:hover{
+    box-shadow: 0 0 10px 0 rgb(231, 105, 147) inset, 0 0 10px 4px rgb(212, 111, 120)
+}
+
 .footer {
     background-color: #222224;
 }
@@ -359,6 +366,54 @@ img {
 
 }
 
+.a__btn{
+    display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  border:solid;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  color: #FF6A6A;
+  background-color: white;
+  padding: 15px 39px;
+}
+
+.a__btn span{
+    position: relative;
+    z-index: 2;
+  }
+
+.a__btn:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#FF6A6A;
+    transition: all .35s;
+  }
+  
+.a__btn:hover{
+    color: #fff;
+  }
+  
+.a__btn:hover:after{
+    width: 100%;
+  }
+
+.icon:hover{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 0 10px 0 rgb(231, 105, 147) inset, 0 0 10px 4px rgb(212, 111, 120)
+}
 
 
 @media (max-width: 768px) {

@@ -1,0 +1,19 @@
+.product__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .product_menu_big {
+        grid-column: span 3;
+    }
+
+    a:hover img{
+        opacity: 0.9;
+        transform: scale(1.05); }
+    
+}
