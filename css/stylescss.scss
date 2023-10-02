@@ -1,164 +1,161 @@
-@import 'header';
-@import 'product';
-@import 'cards';
-@import 'discounts';
-@import 'producthtml';
-@import 'mixins';
+@import "header";
+@import "product";
+@import "cards";
+@import "discounts";
+@import "producthtml";
+@import "mixins";
+@import "catalog";
 
 * {
-    padding: 0px;
-    margin: 0px;
-    border: none;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+summary {
+  display: block;
 }
 
 body {
-    font-family: lato;
-    font-style: normal;
-    line-height: normal;
+  font-family: lato;
+  font-style: normal;
+  line-height: normal;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-
 @media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
 
-    .container {
-        max-width: 100%;
-    }
+  .product__menu {
+    gap: 10px;
+  }
 
-    .product__menu {
-        gap: 10px;
-    }
+  .products__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
 
-    .products__cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 14px;
-    }
+  .header__but {
+    max-width: 767px;
+  }
 
-    .header__but {
-        max-width: 767px;
-    }
+  .text_menu {
+    max-height: 368px;
+    max-width: 100%;
+  }
 
-    .text_menu {
-        max-height: 368px;
-        max-width: 100%;
-    }
+  .discounts__menu {
+    display: flex;
 
-    .discounts__menu {
-        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 104px;
+  }
 
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 50px 104px;
-    }
+  .subscribe {
+    background-size: cover;
+    height: 640px;
+  }
 
-    .subscribe {
-        background-size: cover;
-        height: 640px;
-    }
+  .subscribe__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .subscribe__menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .subscribe__comment {
+    padding: 60px 0 0 0;
+  }
 
-    .subscribe__comment {
-        padding: 60px 0 0 0;
-    }
+  .subscribe__email {
+    padding: 0 0 0 20px;
+  }
 
-    .subscribe__email {
-        padding: 0 0 0 20px;
-    }
-
-    .subscribe__email h1 {
-        line-height: 1;
-    }
+  .subscribe__email h1 {
+    line-height: 1;
+  }
 }
 
 @media (max-width: 458px) {
-    .img_men {
-        display: none;
-    }
+  .img_men {
+    display: none;
+  }
 
-    .header__but-row {
-        min-height: 363px;
+  .header__but-row {
+    min-height: 363px;
+  }
 
-    }
+  .header__but {
+    display: flex;
+    align-items: center;
+  }
 
-    .header__but {
-        display: flex;
-        align-items: center;
-    }
+  .text_menu {
+    right: 0;
+  }
 
-    .text_menu {
-        right: 0;
+  .product__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
 
-    }
+  .product_menu_big img {
+    object-fit: cover;
+    height: 111px;
+    width: 360px;
+  }
 
-    .product__menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 32px;
+  .products__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 
-    }
+  .prod__card img {
+    width: 100%;
+  }
 
+  .discounts__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 13px;
+  }
 
+  .subscribe__comment p {
+    font-size: 18px;
+  }
 
+  .subscribe__email span {
+    font-size: 14px;
+  }
 
-    .product_menu_big img {
-        object-fit: cover;
-        height: 111px;
-        width: 360px;
-
-
-    }
-
-    .products__cards {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-
-    .prod__card img {
-        width: 100%;
-    }
-
-    .discounts__menu {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 50px 13px;
-    }
-
-    .subscribe__comment p {
-        font-size: 18px;
-    }
-
-    .subscribe__email span {
-        font-size: 14px;
-    }
-
-    .footer__menu {
-        flex-direction: column-reverse;
-        padding-top: 30px;
-    }
-
-
+  .footer__menu {
+    flex-direction: column-reverse;
+    padding-top: 30px;
+  }
 }
