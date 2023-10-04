@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/stylescss.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Catalog</title>
 </head>
 <body>
     <div class="box-content">
@@ -14,13 +14,16 @@
             <div class="container">
                 <div class="header__top-row">
                     <div class="logo">
-                        <img class="logo-img" src="img/Group 2.png" alt="">
-                        <img class="logo-search" src="img/Forma 1 (3).svg" alt="">
+                        <a href="#"><img class="logo-img" src="img/Group 2.png" alt=""></a>
+                    <a href="#"><img class="logo-search" src="img/Forma 1 (3).svg" alt=""></a>
                     </div>
                     <div class="header_menu">
                         <div class="burger-menu-icon">
                             <label for="burger">
-                                <img src="img/Forma 1.svg" alt="">
+                                <svg class="burger-menu-icon-svg" width="32" height="23" viewBox="0 0 32 23"  xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8"/>
+                                    </svg>
+                                    
                             </label>
                             <input type="checkbox" id="burger">
                             <nav class="nav">
@@ -57,8 +60,8 @@
                             </nav>
                         </div>
                         
-                        <a href=""><img src="img/Forma 1 (1).svg" alt=""></a>
-                        <a href=""><img src="img/Forma 1 (2).svg" alt=""></a>
+                        <a href=""><img class="header_menu-img" src="img/Forma 1 (1).svg" alt=""></a>
+                        <a href=""><img class="header_menu-img" src="img/Forma 1 (2).svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -68,8 +71,8 @@
                 NEW ARRIVALS
             </h2>
             <nav class="breadcrumbs">
-                <a href="" class="breadcrumbs__link">Home</a> /
-                <a href="" class="breadcrumbs__link">Men</a> /
+                <a href="" class="breadcrumbs__link">Home</a> 
+                <a href="" class="breadcrumbs__link">Men</a> 
                 <a href="" class="breadcrumbs__link-big">NEW ARRIVALS</a>
             </nav>
         </div>
@@ -81,7 +84,7 @@
                     </svg>
                 </summary>
                 <div class="filter__content">
-                    <details class="filter__item">
+                    <details class="filter__item" open>
                         <summary class="filter__head">CATEGORY</summary>
                         <div class="filter__link-box">
                             <a href="" class="filter__link">Accessories</a>
@@ -99,9 +102,23 @@
                     </details>
                     <details class="filter__item">
                         <summary class="filter__head">BRAND</summary>
+                        <div class="filter__link-box">
+                            <a href="" class="filter__link">Nike</a>
+                            <a href="" class="filter__link">Puma</a>
+                            <a href="" class="filter__link">Adidas</a>
+                            <a href="" class="filter__link">H&M</a>
+                            <a href="" class="filter__link">New Balance</a>
+                            <a href="" class="filter__link">Old</a>
+                        </div>
                     </details>
                     <details class="filter__item">
                         <summary class="filter__head">DESIGNER</summary>
+                        <div class="filter__link-box">
+                            <a href="" class="filter__link">Philippe Starck</a>
+                            <a href="" class="filter__link">Karim Rashid</a>
+                            <a href="" class="filter__link">Stefano Giovannoni</a>
+                        </div>
+                    
                     </details>
                 </div>    
             </details>
@@ -113,6 +130,24 @@
                             </svg>
                            
                     </summary>
+                    <div class="sort__box-trend">
+                        <div class="sort__check">
+                            <input id="sort_check1" type="checkbox">
+                            <label for="sort_check1">Scholten & Baijings</label>
+                        </div>
+                        <div class="sort__check">
+                            <input id="sort_check2" type="checkbox">
+                            <label for="sort_check2">Jaime Hayon</label>
+                        </div>
+                        <div class="sort__check">
+                            <input id="sort_check3" type="checkbox">
+                            <label for="sort_check3">Patricia Urquiola</label>
+                        </div>
+                        <div class="sort__check">
+                            <input id="sort_check4" type="checkbox">
+                            <label for="sort_check4">Raw Edges</label>
+                        </div>
+                    </div>
                 </details>
     
                 <details class="sort__details">
@@ -148,6 +183,25 @@
                             </svg>
                            
                     </summary>
+
+                    <div class="sort__box">
+                        <div class="sort__check">
+                            <input id="sort_check1" type="checkbox">
+                            <label for="sort_check1">0-50$</label>
+                        </div>
+                        <div class="sort__check">
+                            <input id="sort_check2" type="checkbox">
+                            <label for="sort_check2">50$-100$</label>
+                        </div>
+                        <div class="sort__check">
+                            <input id="sort_check3" type="checkbox">
+                            <label for="sort_check3">100&-200$</label>
+                        </div>
+                        <div class="sort__check">
+                            <input id="sort_check4" type="checkbox">
+                            <label for="sort_check4">200$-500$</label>
+                        </div>
+                    </div>
                 </details>
     
             </div>
@@ -320,7 +374,6 @@
                     </div>
                     <div class="footer__messanger">
                         <a href="#"><img class="icon" src="img/fac.png" alt=""></a>
-                        <a href="#"><img class="icon" src="img/inst.png" alt=""></a>
                         <a href="#"><img class="icon" src="img/pin.png" alt=""></a>
                         <a href="#"><img class="icon" src="img/twit.png" alt=""></a>
                     </div>

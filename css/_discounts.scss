@@ -1,155 +1,162 @@
 .discounts {
-    background-color: #222224;
+  background-color: #222224;
 
-    &__menu {
-        padding: 103px 0px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+  &__menu {
+    padding: 103px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 
-        &-ls {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            gap: 20px;
-            color: #FBFBFB;
+    &-ls {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 20px;
+      color: #fbfbfb;
+      cursor: pointer;
 
-            & h2 {
-                font-size: 20px;
-                font-weight: 400;
-            }
-            
-            & p {
-                text-align: center;
-                font-size: 14px;
-                font-weight: 300;
-                padding: 0 20px;
-            }
-        }
+      & h2 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      & p {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 0 20px;
+      }
     }
+    &-ls:hover {
+      border: 0px solid;
+      box-shadow: 1px 1px 20px #e05c6e;
+    }
+  }
 }
 
 .subscribe {
-    background: url(../img/fon.png) no-repeat;
-    max-height: 100%;
-    background-size: cover;
-    background-position: 100% 100%;
-    background-blend-mode: screen;
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 448px;
+  background: url(../img/fon.png) no-repeat;
+  max-height: 100%;
+  background-size: cover;
+  background-position: 100% 100%;
+  background-blend-mode: screen;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 448px;
 
-    &__menu {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 80px;
-        align-items: end;
-        justify-items: center;
-        text-align: center;
+  &__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    align-items: end;
+    justify-items: center;
+    text-align: center;
 
-        .subscribe__comment p {
-            text-align: center;
-            font-size: 20px;
-            font-weight: 400;
-            color: #010000;
-        }
-
-        .subscribe__comment p span {
-            font-size: 20px;
-            font-style: italic;
-        }
-
-        .subscribe__comment {
-            padding: 97px 0;
-            display: flex;
-            gap: 30px;
-            flex-direction: column;
-            align-items: center;
-            width: 360px;
-        }
-        .subscribe__email {
-            padding: 97px 0;
-            display: flex;
-            gap: 15px;
-            flex-direction: column;
-            align-items: center;
-
-            .form {
-                display: flex;
-                justify-content: center;
-            }
-            
-            .form input {
-                padding: 8px;
-                border: 1px solid rgba(0, 0, 0, 0.2);
-                border-bottom-left-radius: 30px;
-                border-top-left-radius: 30px;
-            }
-            
-            .form button {
-                background: #E05C6E;
-                border: 1px solid rgba(0, 0, 0, 0.2);
-                padding: 8px;
-                color: white;
-                border-left: none;
-                font-size: 14px;
-                font-family: sans-serif;
-                border-bottom-right-radius: 30px;
-                border-top-right-radius: 30px;
-                height: 49px;
-                width: 100px;
-            }
-
-            .form__btn:hover{
-                box-shadow: 0 0 10px 0 rgb(231, 105, 147) inset, 0 0 10px 4px rgb(212, 111, 120)
-            }
-        }
-        
-        .subscribe__email h1 {
-            color: #222224;
-            text-align: center;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 167.2%;
-        }
-        
-        .subscribe__email span {
-            color: #222224;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 167.2%;
-        }
-        
-    
+    .subscribe__comment p {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      color: #010000;
     }
+
+    .subscribe__comment p span {
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .subscribe__comment {
+      padding: 97px 0;
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      width: 360px;
+    }
+    .subscribe__email {
+      padding: 97px 0;
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+      align-items: center;
+
+      .form {
+        display: flex;
+        justify-content: center;
+      }
+
+      .form input {
+        padding: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+      }
+
+      .form button {
+        background: #e05c6e;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 8px;
+        color: white;
+        border-left: none;
+        font-size: 14px;
+        font-family: sans-serif;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        height: 49px;
+        width: 100px;
+      }
+
+      .form__btn:hover {
+        box-shadow: 0 0 10px 0 rgb(231, 105, 147) inset,
+          0 0 10px 4px rgb(212, 111, 120);
+      }
+    }
+
+    .subscribe__email h1 {
+      color: #222224;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 167.2%;
+    }
+
+    .subscribe__email span {
+      color: #222224;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 167.2%;
+    }
+  }
 }
 
 .footer {
-    background-color: #222224;
+  background-color: #222224;
 }
 
 .footer__menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer-signature {
-    display: inline-block;
-    padding: 30px 10px;
+  display: inline-block;
+  padding: 30px 10px;
 }
 
 .footer-signature p {
-    color: #FBFBFB;
-    font-size: 16px;
-
+  color: #fbfbfb;
+  font-size: 16px;
+}
+.footer-messanger a {
+  width: 32px;
+  height: 32px;
 }
 
-.icon:hover{
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
-    box-shadow: 0 0 10px 0 rgb(231, 105, 147) inset, 0 0 10px 4px rgb(212, 111, 120)
+.icon:hover {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 0 10px 0 rgb(231, 105, 147) inset,
+    0 0 10px 4px rgb(212, 111, 120);
 }
-

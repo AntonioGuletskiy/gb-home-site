@@ -55,6 +55,8 @@ $colorLink: #6f6e6e;
 
   .filter__heading {
     color: $backBlock;
+    cursor: pointer;
+
     @include styleCat(14px, 600, 17px);
   }
 
@@ -68,6 +70,7 @@ $colorLink: #6f6e6e;
     padding: 8px 11px 11px 11px;
     border-bottom: 1px solid #ebebeb;
     border-left: 5px solid $colorText;
+    cursor: pointer;
   }
   &__link-box {
     display: flex;
@@ -94,6 +97,26 @@ $colorLink: #6f6e6e;
   display: flex;
   gap: 18px;
   z-index: 10;
+
+  &__box-trend {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: white;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 7px 10px 11px 9px;
+    position: absolute;
+    left: -40px;
+    top: 22px;
+  }
+
+  &__check input[type="checkbox"]:checked + label {
+    color: $colorText;
+  }
+
+  &__check input[type="checkbox"]:checked + label:after {
+    color: $colorText;
+  }
 
   &__details {
     position: relative;
@@ -127,6 +150,10 @@ $colorLink: #6f6e6e;
   &__heading {
     color: $colorLink;
     @include styleCat(14px, 400, 17px);
+    cursor: pointer;
+  }
+  &__heading:hover {
+    color: $colorText;
   }
 }
 
@@ -149,7 +176,7 @@ $colorLink: #6f6e6e;
   top: 75px;
   right: -235px;
   transition: right 0.3s;
-  z-index: 10;
+  z-index: 100;
 
   &__h1 {
     padding-bottom: 24px;
@@ -190,4 +217,14 @@ $colorLink: #6f6e6e;
   &:checked ~ .nav {
     right: 0px;
   }
+}
+
+.burger-menu-icon svg:hover {
+  cursor: pointer;
+  color: $colorText;
+  fill: $colorText;
+}
+
+.burger-menu-icon-svg:hover {
+  transform: scale(1.1);
 }
