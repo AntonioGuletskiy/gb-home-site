@@ -1,0 +1,208 @@
+.shopping {
+  display: grid;
+  grid-template-columns: 5fr 2.5fr;
+  gap: 128px;
+  margin-top: 96px;
+
+  &__adress {
+    display: flex;
+    flex-direction: column;
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+    }
+    &-form h3 {
+      color: #222;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    &-input {
+      padding-top: 12px;
+      padding-bottom: 16px;
+      padding-left: 17px;
+      border: 1px solid #a4a4a4;
+      &::placeholder {
+        color: #222;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 10px #6f6e6e;
+      }
+
+      &-btn {
+        margin-bottom: 62px;
+        padding-top: 3px;
+        width: 100px;
+        padding: 11px 13px;
+        text-align: center;
+        color: #4a4a4a;
+        border: 1px solid #a4a4a4;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px;
+        background-color: white;
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: 0 0 10px #6f6e6e;
+        }
+      }
+    }
+    &-finblock {
+      padding: 40px 34px;
+      background-color: #f5f3f3;
+      display: flex;
+      flex-direction: column;
+      align-content: flex-end;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+
+    &-finblock h4 {
+      color: #4a4a4a;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 12px;
+
+      & span {
+        padding-left: 20px;
+      }
+    }
+    &-finblock h3 {
+      color: #222;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      margin-bottom: 21px;
+
+      & span {
+        padding-left: 20px;
+        color: #ef5b70;
+      }
+    }
+  }
+
+  .shopping__finbtn {
+    border-top: 2px solid #e2e2e2;
+
+    &-link {
+      margin-top: 17px;
+      padding: 16px 43px;
+      border: 1px solid #f16d7f;
+      background-color: #ef5b70;
+      color: white;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &-individual {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 1px 1px 10px black;
+      .svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 28px;
+        padding-right: 22px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+    &-img {
+      width: 262px;
+      height: 306px;
+    }
+
+    &-info {
+      margin: 22px 105px 0 31px;
+      & h1 {
+        color: #222;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-bottom: 42px;
+      }
+    }
+    &-txt {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    &-txt h2 {
+      color: #6f6e6e;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &-txt h2 span {
+      margin-left: 4px;
+      color: #ef5b70;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .count {
+    display: flex;
+  }
+  .quantity {
+    margin-left: 24px;
+    border: 1px solid;
+    height: 25px;
+    text-align: center;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 128px;
+
+    &-link {
+      padding: 17px 40px 16px;
+      border: 1px solid #a4a4a4;
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      &:hover {
+        box-shadow: 0 0 10px #6f6e6e;
+      }
+    }
+  }
+}
+
+.shopping__finbtn-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.shopping__finbtn-link:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}

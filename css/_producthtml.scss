@@ -32,10 +32,16 @@ $colorLink: #6f6e6e;
     font-size: 24px;
     line-height: 29px;
   }
-
+  .breadcrumbs__link:hover {
+    color: $colorText;
+    border-left-width: 3px;
+  }
   .breadcrumbs__link {
+    text-transform: uppercase;
     color: $colorLink;
     font-size: 14px;
+    border-left: 0 solid $colorText;
+    transition: 0.2s;
     @include style();
 
     &-big {
@@ -150,7 +156,7 @@ $colorLink: #6f6e6e;
   display: flex;
   gap: 10px;
   align-items: center;
-  transition: color 0.4s, background-color 0.4s, box-shadow 0.2s 0.3s;
+  transition: color 0.1s, background-color 0.1s, box-shadow 0.1s 0.1s;
 
   & h4 {
     color: $colorText;
@@ -161,4 +167,9 @@ $colorLink: #6f6e6e;
 
 .product__btn:hover {
   opacity: 0.6;
+  box-shadow: 1px 1px 10px $colorText;
+}
+
+.breadcrumbs > a:not(:last-child)::after {
+  content: " /";
 }
