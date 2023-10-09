@@ -935,6 +935,122 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.registration__box {
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: 96px;
+  gap: 128px;
+}
+.registration__form {
+  max-width: 359px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.registration__title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  color: #222;
+}
+.registration__input {
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-left: 17px;
+  border: 1px solid #a4a4a4;
+}
+.registration__input::-moz-placeholder {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__input::placeholder {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #6f6e6e;
+}
+.registration__check {
+  padding: 10px 0;
+}
+.registration__check label {
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #000;
+}
+.registration__p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #b1b1b1;
+}
+.registration__btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 29px;
+  border: 1px solid #f16d7f;
+  background: #f16d7f;
+  width: 108px;
+  cursor: pointer;
+}
+.registration__btn-link {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.registration__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.registration__info {
+  display: flex;
+  gap: 21px;
+  flex-direction: column;
+  max-width: 652px;
+}
+.registration__info-p {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__sibtitle {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__list li {
+  margin: 16px 0;
+  text-align: left;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__svg {
+  margin-right: 23px;
+}
+
 * {
   padding: 0px;
   margin: 0px;
