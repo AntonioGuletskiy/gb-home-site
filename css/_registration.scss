@@ -1,0 +1,115 @@
+.registration {
+  &__box {
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 96px;
+    gap: 128px;
+  }
+  &__form {
+    max-width: 359px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+  &__title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    color: #222;
+  }
+  &__input {
+    padding-top: 12px;
+    padding-bottom: 16px;
+    padding-left: 17px;
+    border: 1px solid #a4a4a4;
+    &::placeholder {
+      color: #b1b1b1;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 10px #6f6e6e;
+    }
+  }
+  &__check {
+    padding: 10px 0;
+
+    & label {
+      padding-left: 10px;
+      padding-right: 20px;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      color: #000;
+    }
+  }
+  &__p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #b1b1b1;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 29px;
+    border: 1px solid #f16d7f;
+    background: #f16d7f;
+    width: 108px;
+    cursor: pointer;
+    &-link {
+      color: #fff;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__info {
+    display: flex;
+    gap: 21px;
+    flex-direction: column;
+    max-width: 652px;
+
+    &-p {
+      color: #000;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+  &__sibtitle {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__list li {
+    margin: 16px 0;
+    text-align: left;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  &__svg {
+    margin-right: 23px;
+  }
+}
