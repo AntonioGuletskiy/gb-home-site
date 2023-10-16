@@ -66,7 +66,7 @@
     }
 
     .subscribe__comment {
-      padding: 97px 0;
+      padding-top: 97px;
       display: flex;
       gap: 30px;
       flex-direction: column;
@@ -159,4 +159,10 @@
   height: 35px;
   box-shadow: 0 0 10px 0 rgb(231, 105, 147) inset,
     0 0 10px 4px rgb(212, 111, 120);
+}
+
+@media (max-width: 768px) {
+  .subscribe__comment {
+    padding: 0;
+  }
 }

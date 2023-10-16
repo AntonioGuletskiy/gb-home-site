@@ -1,5 +1,6 @@
 .header {
   background-color: #222;
+  overflow: hidden;
 }
 .header__top-row {
   display: flex;
@@ -270,7 +271,7 @@
   font-style: italic;
 }
 .subscribe__menu .subscribe__comment {
-  padding: 97px 0;
+  padding-top: 97px;
   display: flex;
   gap: 30px;
   flex-direction: column;
@@ -356,6 +357,11 @@
   box-shadow: 0 0 10px 0 rgb(231, 105, 147) inset, 0 0 10px 4px rgb(212, 111, 120);
 }
 
+@media (max-width: 768px) {
+  .subscribe__comment {
+    padding: 0;
+  }
+}
 .top-head {
   background: #f8f3f4;
   padding-top: 60px;
@@ -519,6 +525,29 @@
   content: " /";
 }
 
+@media (max-width: 1177px) {
+  .top-head {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .product__card {
+    position: inherit;
+    margin-top: 12px;
+  }
+  .product__card-big {
+    border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .product__card-big p {
+    overflow-wrap: break-word;
+  }
+}
 .filter-sort {
   height: 100px;
   padding-top: 39px;
@@ -935,11 +964,44 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1177px) {
+  .shopping {
+    grid-template-columns: 1fr;
+    gap: 64px;
+    margin: 50px 16px 150px 16px;
+  }
+  .shopping__adress {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    max-height: 272px;
+  }
+}
+@media (max-width: 768px) {
+  .shopping {
+    margin-bottom: 150px;
+  }
+  .shopping__card-info {
+    margin: 0;
+    padding-top: 22px;
+    padding-left: 31px;
+  }
+  .shopping__btn {
+    justify-content: center;
+    gap: 48px;
+  }
+  .subscribe__comment {
+    padding: 0 0;
+  }
+}
 .registration__box {
   display: flex;
   margin-top: 64px;
   margin-bottom: 96px;
   gap: 128px;
+  overflow: hidden;
 }
 .registration__form {
   max-width: 359px;
@@ -1051,6 +1113,21 @@
   margin-right: 23px;
 }
 
+@media (max-width: 1177px) {
+  .registration__box {
+    margin-top: 40px;
+    padding: 0 16px;
+    gap: 22px;
+  }
+  .registration__form {
+    min-width: 359px;
+  }
+  .registration__sibtitle,
+  .registration__info-p,
+  .registration__list li {
+    font-size: 16px;
+  }
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -1119,9 +1196,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0;
+    padding: 0;
   }
   .subscribe__comment {
-    padding: 60px 0 0 0;
+    padding: 0;
   }
   .subscribe__email {
     padding: 0 0 0 20px;
