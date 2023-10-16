@@ -4,6 +4,7 @@
     margin-top: 64px;
     margin-bottom: 96px;
     gap: 128px;
+    overflow: hidden;
   }
   &__form {
     max-width: 359px;
@@ -111,5 +112,21 @@
   }
   &__svg {
     margin-right: 23px;
+  }
+}
+
+@media (max-width: 1177px) {
+  .registration__box {
+    margin-top: 40px;
+    padding: 0 16px;
+    gap: 22px;
+  }
+  .registration__form {
+    min-width: 359px;
+  }
+  .registration__sibtitle,
+  .registration__info-p,
+  .registration__list li {
+    font-size: 16px;
   }
 }

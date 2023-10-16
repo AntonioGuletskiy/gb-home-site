@@ -206,3 +206,37 @@
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 1177px) {
+  .shopping {
+    grid-template-columns: 1fr;
+    gap: 64px;
+    margin: 50px 16px 150px 16px;
+  }
+  .shopping__adress {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    max-height: 272px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shopping {
+    margin-bottom: 150px;
+  }
+  .shopping__card-info {
+    margin: 0;
+    padding-top: 22px;
+    padding-left: 31px;
+  }
+  .shopping__btn {
+    justify-content: center;
+    gap: 48px;
+  }
+  .subscribe__comment {
+    padding: 0 0;
+  }
+}

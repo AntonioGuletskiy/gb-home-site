@@ -173,3 +173,28 @@ $colorLink: #6f6e6e;
 .breadcrumbs > a:not(:last-child)::after {
   content: " /";
 }
+
+@media (max-width: 1177px) {
+  .top-head {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product__card {
+    position: inherit;
+    margin-top: 12px;
+  }
+  .product__card-big {
+    border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .product__card-big p {
+    overflow-wrap: break-word;
+  }
+}
