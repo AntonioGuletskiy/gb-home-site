@@ -10,6 +10,9 @@ $colorLink: #6f6e6e;
   font-weight: $weight;
   line-height: $height;
 }
+.box-content {
+  position: relative;
+}
 
 .filter-sort {
   height: 100px;
@@ -157,12 +160,9 @@ $colorLink: #6f6e6e;
   }
 }
 
-.header {
-  position: relative;
-}
-
 .box-content {
   overflow: hidden;
+  position: relative;
 }
 
 .nav {
@@ -227,4 +227,40 @@ $colorLink: #6f6e6e;
 
 .burger-menu-icon-svg:hover {
   transform: scale(1.1);
+}
+
+.filter__summary:focus-visible {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .products__cards {
+    grid-template-columns: repeat(2, 3fr);
+  }
+}
+
+@media (max-width: 458px) {
+  .products__cards {
+    grid-template-columns: repeat(2, 3fr);
+  }
+
+  .top-head {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .filter .filter__heading {
+    display: none;
+  }
+  .filter .filter__heading svg {
+    fill: 37px;
+  }
+  .sort__heading {
+    font-size: 12px;
+  }
+  .filter {
+    gap: 0px;
+  }
+  .sort_summary:first {
+    width: 96px;
+  }
 }

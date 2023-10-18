@@ -198,3 +198,29 @@ $colorLink: #6f6e6e;
     overflow-wrap: break-word;
   }
 }
+
+@media (max-width: 768px) {
+  .cards .products__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product__card-big p {
+    box-sizing: border-box;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 458px) {
+  .cards .products__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .top-head {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .product__card-link {
+    font-size: 10px;
+  }
+  .product__card-big p {
+    width: 330px;
+  }
+}

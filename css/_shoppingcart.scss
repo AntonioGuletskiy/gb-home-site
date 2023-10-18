@@ -209,7 +209,7 @@
 
 @media (max-width: 1177px) {
   .shopping {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     gap: 64px;
     margin: 50px 16px 150px 16px;
   }
@@ -226,6 +226,7 @@
 @media (max-width: 768px) {
   .shopping {
     margin-bottom: 150px;
+    max-width: auto;
   }
   .shopping__card-info {
     margin: 0;
@@ -238,5 +239,48 @@
   }
   .subscribe__comment {
     padding: 0 0;
+  }
+  .shopping__card-img {
+    height: auto;
+  }
+  .shopping .count {
+    padding-bottom: 3px;
+  }
+  .shopping .quantity {
+    height: 20px;
+  }
+}
+
+@media (max-width: 458px) {
+  .shopping {
+    margin-bottom: 48px;
+  }
+  .shopping__card-info h1 {
+    font-size: 16px;
+  }
+  .shopping__card-txt h2 {
+    font-size: 14px;
+  }
+  .shopping__card {
+    max-width: 350px;
+  }
+  .shopping__card-img {
+    height: auto;
+  }
+  .shopping__card-individual .svg {
+    padding-top: 2px;
+    padding-right: 2px;
+  }
+  .shopping__btn {
+    gap: 9px;
+    margin-bottom: 48px;
+  }
+  .shopping__btn-link {
+    font-size: 12px;
+    padding: 9px 16px;
+  }
+  .shopping__adress {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 300px;
   }
 }
